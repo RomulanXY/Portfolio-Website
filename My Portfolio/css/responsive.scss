@@ -1,0 +1,138 @@
+
+
+@media (max-width: 917px) {
+    .services_section{
+        .service_item{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    .portfolio_section{
+        .portfolio_item{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .home_section{
+        .full_screen{
+            .home_text,.home_img{
+                padding: 100px 0;
+            }
+        }
+        .home_text,.home_img{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .home_text{
+            order: 2;
+            text-align: center;
+        }
+        .home_img{
+            .img_box{
+                margin-bottom: 40px;
+                max-width: 350px;
+            }
+        }
+    }
+    .about_section{
+        .about_img{
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-bottom: 20px;
+        }
+        .about_info{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .skills{
+            .skill_item{
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .timeline{
+            &::before{
+                left: 35px;
+            }
+            .timeline_item{
+                margin-bottom: 40px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &:nth-child(odd){
+                    padding-right: 15px;
+                    text-align: left;
+                    padding-left: 75px;
+                    .inner_timeline_item::before {
+                        left: -30px;
+                    }
+                    .icon{
+                        right: auto;
+                        left: -60px;
+                    }
+                }
+                &:nth-child(even){
+                    padding-left: 75px;
+                    padding-right: 15px;
+                    .icon {
+                        left: -60px;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+    .services_section {
+        .service_item {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .portfolio_section{
+        .portfolio_item{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .portfolio_pp {
+        .info, .description{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .contact_section {
+        .contact_item, .w-50{
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 10px;
+        }
+    }
+    .effect-3{
+        margin-left: -60px;
+    }
+    .effect-4{
+        left: 15%;
+    }
+    .effect-5{
+        right: 4%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .home_section{
+        .home_text{
+            h2{
+                font-size: 40px;
+            }
+        }
+        .home_img{
+            .img_box{
+                max-width: 260px;
+            }
+        }
+    }
+}
